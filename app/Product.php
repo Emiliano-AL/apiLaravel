@@ -36,7 +36,7 @@ class Product extends Model
     }
 
     //Muchos a muchos
-    public function products(){
+    public function categories(){
         return $this->belongsToMany(Category::class);
     }
 }
